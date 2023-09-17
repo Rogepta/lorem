@@ -1,0 +1,131 @@
+$blueLight: rgba(67, 171, 240, 1);
+$backgroundColor: rgba(16, 16, 29, 0.9);
+$backgroundImageOrder: url("../../src/assets/backgroundOrder.png");
+
+.container {
+  margin: 0 auto;
+  max-width: 1172px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.order {
+  background-color: $backgroundColor;
+  background-image: $backgroundImageOrder;
+  padding-bottom: 155px;
+}
+
+.widget-steps {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding-bottom: 60px;
+
+  @media (max-width: 320px) {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 40px;
+  }
+}
+
+.widget-steps__item {
+  position: relative;
+  border: 5px solid #286690;
+  width: 100px;
+  height: 100px;
+  background: #3e9cdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 320px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.widget-steps__item-text {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: -50px;
+  right: -50px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+    line-height: 14px;
+    top: calc(100% + 10px);
+    left: -25px;
+    right: -25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .widget-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .order {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mobile-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    z-index: 10;
+    color: #ffffff;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(16, 16, 29, 0.9);
+    z-index: 10;
+    transition: left 1s;
+  }
+  .active {
+    left: 0;
+  }
+
+  .nav__item {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .widget-steps__item-text {
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .widget-steps__item-text {
+    left: -50px;
+    right: -50px;
+  }
+}

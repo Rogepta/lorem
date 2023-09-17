@@ -1,0 +1,74 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  color: white;
+  background-color: #3e9cdc;
+  border: 2px solid;
+  border-color: #ffffff;
+  border-radius: 4px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  width: 100%;
+
+  &:hover {
+    background-color: #68b3e6;
+  }
+
+  &--second {
+    background: #ffffff;
+    border-color: #3e9cdc;
+    border-radius: 3px;
+    color: #2a2b30;
+    max-width: 357px;
+    width: 100%;
+
+    &:hover {
+      background: #e2dbdb;
+    }
+  }
+
+  &--form {
+    line-height: 24px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    max-width: 357px;
+    width: 100%;
+  }
+
+  &--fix {
+    max-width: 183px;
+    width: 100%;
+  }
+
+  &--border-mini {
+    border-width: 1px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .button {
+    &--form {
+      width: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &--second {
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.input-add-file {
+  display: flex;
+  justify-content: center;
+  display: none;
+}

@@ -1,0 +1,41 @@
+$blueLight: rgba(67, 171, 240, 1);
+$backgroundColor: rgba(16, 16, 29, 0.9);
+$backgroundImageOrder: url("../../../assets/backgroundOrder.png");
+
+.order {
+  background-color: $backgroundColor;
+  background-image: $backgroundImageOrder;
+  padding-bottom: 155px;
+}
+
+.widget-steps {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.widget-steps__item {
+  position: relative;
+  border: 5px solid #286690;
+  width: 100px;
+  height: 100px;
+  background: #3e9cdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-steps__item-text {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: -50px;
+  right: -50px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}

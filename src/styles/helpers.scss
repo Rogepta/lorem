@@ -1,0 +1,44 @@
+.c-accent {
+  color: #3e9cdc;
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+@media (min-width: 320px) {
+  .pb-80 {
+    padding-bottom: 40px;
+  }
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+@media (min-width: 320px) {
+  .pt-80 {
+    padding-top: 40px;
+  }
+}
+
+.w-sm-100 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .pt-80 {
+    padding-bottom: 35px;
+  }
+}
+
+.c-beige {
+  color: #c3c3c3;
+}

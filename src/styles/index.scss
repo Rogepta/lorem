@@ -1,0 +1,27 @@
+$backgroundOrder: url("./assets/order_background.png");
+
+*,
+*:after,
+*:before {
+  color: #000000;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+svg {
+  display: block;
+}
+

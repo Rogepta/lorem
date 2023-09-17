@@ -1,0 +1,33 @@
+$backgroundImage: url("../../../assets/background.png");
+
+.section-promo {
+  padding-top: 203px;
+  padding-bottom: 203px;
+  background-image: $backgroundImage;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  &__content {
+    padding: 80px 0;
+
+    @media screen and (max-width: 320px) {
+      padding: 10px 0;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (max-width: 320px) {
+  .button-group {
+    gap: 12px;
+  }
+}
